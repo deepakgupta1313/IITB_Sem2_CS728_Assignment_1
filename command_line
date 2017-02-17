@@ -1,0 +1,12 @@
+./svm_hmm_learn -c 5 -e 0.5 train3.shin train4.model > svmhmm_training_output.txt
+
+./svm_hmm_classify test3.shin train4.model test4_01.outtags > svmhmm_testing_output.txt
+
+
+./crfsuite learn -m CRF.model train3.txt > crf_training_output.txt
+
+./crfsuite tag -m CRF.model test3.txt > test4_02.outtags
+
+./crfsuite learn -e2 train3.txt test3.txt > crf_training_testing_output.txt
+
+./crfsuite tag -m CRF.model -qt test3.txt

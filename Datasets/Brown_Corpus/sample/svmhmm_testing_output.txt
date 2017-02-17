@@ -1,0 +1,8 @@
+Reading model...Reading model...OK. (140 support vectors read)
+done.
+Reading test examples..done.
+Classifying test examples..100..200..300..done
+Runtime (without IO) in cpu-seconds: 0.15
+Average loss on test set: 13.1732
+Zero/one-error on test set: 100.00% (0 correct, 306 incorrect, 306 total)
+average loss per word: 0.5990
